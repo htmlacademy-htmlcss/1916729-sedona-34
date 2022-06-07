@@ -290,11 +290,10 @@ body {
 
 /**Фоновые изображения**/
 .inner-filter {
-  color: #ffffff;
-  background-color: #82B3D3;
+  background-color: #ffffff;
   background-image: url("../images/catalog-background.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: 100% 25%;
 }
 
 .main-index {
