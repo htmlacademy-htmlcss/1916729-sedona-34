@@ -21,17 +21,11 @@ body {
   background-color: #ffffff;
 }
 
-.page-header {
-  background-color: #ffffff;
-  color: #000000;
-}
 
 .navigation-search-link {
-  font-family: "PT Sans" sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   background-color:  #756157;
@@ -39,19 +33,21 @@ body {
 }
 
 .navigation-link {
-  font-family: "PT Sans" sans-serif;
   font-weight: 700;
   font-size: 20px;
-  line-height: 26px;
-  text-align: left;
-  color: inherit;
+  text-transform: capitalize;
   text-decoration: none;
+  color: #000000;
 }
 
+.navigation-search-item {
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: capitalize;
+  color: #000000;
+}
 
 .advantage {
-  font-family: "PT Sans", sans-serif;
-  font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
@@ -59,16 +55,11 @@ body {
 
 }
 .advantage-child {
-  font-family: "PT Sans", sans-serif;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 26px;
   text-align: center;
 
 }
 .advantage-title,
 .benefits-title {
-  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -80,85 +71,60 @@ body {
 
 
 .benefits-about {
-  font-family: "PT Sans", sans-serif;
-  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
-  
+
 }
 
 .advantage-title-text{
-  font-family: "PT Sans", sans-serif;
-  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
 
 }
 .search-hotel {
-  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
-  
-
 }
 .search-hotel-description {
-  font-family: "PT Sans", sans-serif;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 26px;
   text-align: center;
-  
 }
 
 .page-footer-title {
-  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
-
-
 }
+
 .page-footer-description {
-  font-family: "PT Sans", sans-serif;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 26px;
   text-align: center;
   color: #ffffff;
 }
 .number {
-  font-family: "PT Sans", sans-serif;
-  font-weight: 400;
   font-size: 40px;
   line-height: 40px;
   text-align: center;
-  color: #000000;
   text-transform: uppercase;
+  color: #000000;
 }
-
-
-
-
 
 /**Шрифты на форму**/
 .field {
   font-family: inherit;
-  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   background-color: #F2F2F2;
   color: #000000;
 }
 .button {
-  font-family: "PT Sans", sans-serif;
+  font-family: "inherit";
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -179,7 +145,7 @@ body {
   text-decoration: none;
 }
 .inner-header-title {
-  font-family: "PT Sans", sans-serif;
+  font-family: "inherit";
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
@@ -187,10 +153,12 @@ body {
 }
 .breadcrumbs {
   font-family: "PT Sans", sans-serif;
-  font-weight: 400;
   font-size: 16px;
   line-height: 21px;
   color: #ffffff;
+}
+.catalog-filter-item {
+  font-family: "PT Sans", sans-serif;
 }
 .catalog-filter-title {
   font-family: "PT Sans", sans-serif;
@@ -201,8 +169,6 @@ body {
   text-transform: capitalize;
 }
 .catalog-filter-list {
-  font-family: "PT Sans", sans-serif;
-  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #ffffff;
@@ -217,7 +183,6 @@ body {
 }
 .button-reset {
   font-family: "PT Sans", sans-serif;
-  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
@@ -243,30 +208,22 @@ body {
   background-color: #756157;
 }
 .hotel-rating {
-  font-family: "PT Sans", sans-serif;
-  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   color: #333333;
-  background-color:  #F2F2F2;
 }
 .hotel-cards-price {
-  font-family: "PT Sans", sans-serif;
-  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
 }
 .search-hotels {
-  font-family: "PT Sans", sans-serif;
-  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
 }
 .pagination-link {
-  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -281,7 +238,6 @@ body {
 /**Сортировка**/
 .dropdown {
   font-family: "PT Sans", sans-serif;
-  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
@@ -290,23 +246,21 @@ body {
 
 /**Фоновые изображения**/
 .inner-filter {
-  background-color: #ffffff;
+  background-color: #82B3D3;
   background-image: url("../images/catalog-background.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 25%;
+  background-size: 100% 100%;
 }
 
-.main-index {
-  color: #000000;
+.main-background {
   background-color: #ffffff;
   background-image: url("../images/index-background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
-    
+
 }
 .newsletter {
-  color: #000000;
-  background-color: #ffffff;
+  background-color:  #82B3D3;
   background-image: url("../images/pattern.jpg");
   height: 411px;
   background-repeat: no-repeat;
@@ -316,50 +270,38 @@ body {
 
 /**Декоративные элементы**/
 .benefits-icon-house {
-  background-color: #ffffff;
   background-image: url("../images/icon/house-icon.svg");
   background-repeat: no-repeat;
   margin-bottom: 30px;
 }
 
 .benefits-icon-burger {
-  background-color: #ffffff;
   background-image: url("../images/icon/burger-icon.svg");
   background-repeat: no-repeat;
   margin-bottom: 30px;
 }
 .benefits-icon-gifts {
-  background-color: #ffffff;
   background-image: url("../images/icon/gift-icon.svg");
   background-repeat: no-repeat;
   margin-bottom: 30px;
 }
 
 .social-icon-vk {
-  color: #000000;
-  background-color: #ffffff;
   background-image: url("../images/icon/social-icon-vkontakte.svg");
   background-repeat: no-repeat;
 }
 .social-icon-telegram {
-  color: #000000;
-  background-color: #ffffff;
   background-image: url("../images/icon/social-icon-telegram.svg");
   background-repeat: no-repeat;
 }
 .social-icon-youtube {
-  color: #000000;
-  background-color: #ffffff;
   background-image: url("../images/icon/Social-icon-youtube.svg");
   background-repeat: no-repeat;
 }
 .about-text {
-  color: #000000;
-  background-color: #ffffff;
   background-image: url("../images/logo-academy.svg");
   background-repeat: no-repeat;
   padding-bottom: 10px;
-
 }
 
 
