@@ -253,7 +253,7 @@ body {
 }
 
 .main-background {
-  background-color: #ffffff;
+  background-color: #349ef5;
   background-image: url("../images/index-background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -301,7 +301,7 @@ body {
 .about-text {
   background-image: url("../images/logo-academy.svg");
   background-repeat: no-repeat;
-  padding-bottom: 10px;
+  height: 40px;
 }
 
 
@@ -309,15 +309,17 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
+/** stealth
+.visually-hidden {
+	position: absolute;
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0;
+	border:0;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+*/
 
 
 ul {
