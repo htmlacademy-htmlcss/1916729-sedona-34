@@ -258,23 +258,69 @@ body {
 
 .navigation {
   display: flex;
+  width: 1200px;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: auto;
+  margin: 0 auto;
 }
 .navigation-list {
   display: flex;
   flex-grow: 1;
+  width: 490px;
 
-  margin: auto;
-  margin-right: 20px;
-
+  margin: 0;
+  padding: 0;
 }
 .navigation-search {
   display: flex;
+  max-width: 300px;
+  margin-left: auto;
 
 }
+.site-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.page-header-logo {
+  display: block;
+  margin: 0 auto;
+}
 
+.advantage-container{
+  display: flex;
+
+  align-items: center;
+  margin: 0;
+  padding: 0;
+
+
+}
+.advantage-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+.advantage-item {
+  display: flex;
+
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.benefits-list {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0;
+  padding: 0;
+}
+
+.benefits-item {
+  width: 400px;
+
+}
 
 
 /**sticky footer**/
