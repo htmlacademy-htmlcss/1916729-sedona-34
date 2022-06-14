@@ -338,6 +338,7 @@ body {
 
 .advantage-list {
   display: flex;
+  justify-content: space-around;
   flex-direction: row;
   flex-wrap: wrap;
   margin: 0;
@@ -345,7 +346,6 @@ body {
 }
 .advantage-item {
   display: flex;
-
   flex-direction: column;
   align-items: center;
 }
@@ -375,7 +375,7 @@ body {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
-  width: 1200px;
+
   height: 384px;
   align-items: center;
   padding: 0;
@@ -429,15 +429,28 @@ body {
   margin: 0 auto;
   width: 1200px;
 }
-.footer-social-container {
-  display: flex;
-  flex-direction: row;
 
-}
 .footer-social-list {
+  display: flex;
   margin: 0;
   padding: 0;
 }
+
+/**Catalog flex**/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /**sticky footer**/
 .main-container {
