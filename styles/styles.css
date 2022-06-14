@@ -27,10 +27,6 @@ body {
   line-height: 26px;
   color: #000000;
   background-color: #ffffff;
-
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
-
 }
 
 
@@ -106,9 +102,14 @@ body {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
+  padding: 29px;
 }
 .search-hotel-description {
   text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 56px;
 }
 
 .page-footer-title {
@@ -160,6 +161,7 @@ body {
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
+
 }
 .inner-header-title {
   font-family: "inherit";
@@ -329,6 +331,9 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  background-color: #82B3D3;
+  color: #ffffff;
+
 }
 
 .advantage-list {
@@ -342,7 +347,7 @@ body {
   display: flex;
 
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .benefits-list {
@@ -365,13 +370,74 @@ body {
   width: 400px;
   height: 384px;
 
-
-
-
-
-
+}
+.benefits-container{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 1200px;
+  height: 384px;
+  align-items: center;
+  padding: 0;
+}
+.wrapper-title {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 1200px;
+  height: 384px;
+}
+.wrapper-title-text {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #82B3D3;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+.search-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width: 1200px;
+  height: 417px;
+  margin: 0 ;
+  padding: 0;
 }
 
+.newsletter-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.newsletter-button {
+
+  border: 1px solid #82B3D3;
+  border-radius: 5px;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 1200px;
+}
+.footer-social-container {
+  display: flex;
+  flex-direction: row;
+
+}
+.footer-social-list {
+  margin: 0;
+  padding: 0;
+}
 
 /**sticky footer**/
 .main-container {

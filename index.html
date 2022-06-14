@@ -84,79 +84,89 @@
             </ul>
           </li>
           <li class="advantage-item">
-            <h2 class="advantage-title">Там есть
-              мост дьявола</h2>
-            <img src="./images/sedona-canyon.jpg" width="800" height="384" alt="Каньен Седона">
-            <span class="advantage-number"><br>№2</span>
-            <p class="advantage-title-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            <div class="wrapper-title">
+              <img src="./images/sedona-canyon.jpg" width="800" height="384" alt="Каньен Седона">
+              <div class="wrapper-title-text">
+                <h2 class="advantage-title">Там есть
+                  мост дьявола</h2>
+                <span class="advantage-number"><br>№2</span>
+                <p class="advantage-title-text">Да, по нему можно пройти!<br> Если вы осмелитесь,<br> разумеется</p>
+              </div>
+            </div>
           </li>
-          <li class="advantage-item">
-            <h2 class="advantage-title">Небольшая
-              площадь</h2>
-            <span class="advantage-number">№3</span>
-            <p class="advantage-title-text">Все достопримечательности находятся очень близко</p>
-          </li>
-          <li class="advantage-item">
-            <h2 class="advantage-title">Красивая
-              дорога</h2>
-            <span class="advantage-number">№4</span>
-            <p class="advantage-title-text">Ехать в Седону из Лас-Вегаса совсем не скучно!Ехать в Седону из Лас-Вегаса
-              совсем не скучно!</p>
-          </li>
-          <li class="advantage-item">
-            <h2 class="advantage-title">Мало
-              туристов</h2>
-            <span class="advantage-number">№5</span>
-            <p class="advantage-title-text">Большинство едет в Гранд Каньон и
-              толпится там</p>
-          </li>
+          <div class="benefits-container">
+            <li class="advantage-item">
+              <h2 class="advantage-title">Небольшая
+                площадь</h2>
+              <span class="advantage-number">№3</span>
+              <p class="advantage-title-text">Все достопримечательности<br> находятся очень близко</p>
+            </li>
+            <li class="advantage-item">
+              <h2 class="advantage-title">Красивая
+                дорога</h2>
+              <span class="advantage-number">№4</span>
+              <p class="advantage-title-text">Ехать в Седону из Лас-Вегаса<br>
+                совсем не скучно!</p>
+            </li>
+            <li class="advantage-item">
+              <h2 class="advantage-title">Мало
+                туристов</h2>
+              <span class="advantage-number">№5</span>
+              <p class="advantage-title-text">Большинство едет в Гранд<br> Каньон и
+                толпится там</p>
+            </li>
+          </div>
         </ul>
-        <h2 class="search-hotel">Заинтересовались?</h2>
-        <p class="search-hotel-description">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие
-          предложения
-          гостиниц в Седоне</p>
-        <a class="button-search" href="#">Поиск гостиницы в седоне</a>
+        <div class="search-container">
+          <h2 class="search-hotel">Заинтересовались?</h2>
+          <p class="search-hotel-description">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие
+            предложения
+            гостиниц в Седоне</p>
+          <a class="button-search" href="#">Поиск гостиницы в седоне</a>
+        </div>
+        <section class="newsletter">
+          <div class="newsletter-container">
+            <h2 class="page-footer-title">Подпишитесь на рассылку</h2>
+            <p class="page-footer-description">Только полезная информация и никакого спама,<br> честное бойскаутское!
+            </p>
+            <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+              <label for="newsletter-email">Email</label>
+              <input class="field" placeholder="Ваш e-mail" type="email" id="newsletter-email" required>
+              <button class="button newsletter-button" type="submit">
+                <span class="visually-hidden">Подписаться</span>
+              </button>
+            </form>
+          </div>
+        </section>
       </div>
-
     </main>
-
-    <section class="newsletter">
-      <h2 class="page-footer-title">Подпишитесь на рассылку</h2>
-      <p class="page-footer-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
-      <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-        <label for="newsletter-email">Email</label>
-        <input class="field" placeholder="Ваш e-mail" type="email" id="newsletter-email" required>
-        <button class="button newsletter-button" type="submit">
-          <span class="visually-hidden">Подписаться</span>
-        </button>
-      </form>
-    </section>
     <footer class="footer-social">
-      <h2 class="visually-hidden">Контакты</h2>
-      <ul class="footer-social-list">
-        <li class="footer-social-item">
-          <a class="button" href="https://vk.com/htmlacademy">
-            <span class="visually-hidden  social-icon-vk">Вконтакте</span>
-          </a>
-        </li>
-        <li class="footer-social-item">
-          <a class="button" href="https://t.me/htmlacademy">
-            <span class="visually-hidden social-icon-telegram">Телеграм</span>
-          </a>
-        </li>
-        <li class="footer-social-item">
-          <a class="button" href="https://www.youtube.com/user/htmlacademyru">
-            <span class="visually-hidden social-icon-youtube">Ютуб</span>
-          </a>
-        </li>
-      </ul>
-      <p class="number">+7 (812) 812-12-12</p>
-      <a class="htmlacademy-link about-text" href="https://htmlacademy.ru/">
-        <span class="visually-hidden">Сайт html academy</span>
-      </a>
+      <div class="footer-container">
+        <ul class="footer-social-list">
+          <div class="footer-social-container">
+            <li class="footer-social-item">
+              <a class="button" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden  social-icon-vk">Вконтакте</span>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="button" href="https://t.me/htmlacademy">
+                <span class="visually-hidden social-icon-telegram">Телеграм</span>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+                <span class="visually-hidden social-icon-youtube">Ютуб</span>
+              </a>
+            </li>
+          </div>
+        </ul>
+        <p class="number">+7 (812) 812-12-12</p>
+        <a class="htmlacademy-link about-text" href="https://htmlacademy.ru/">
+          <span class="visually-hidden">Сайт html academy</span>
+        </a>
+      </div>
     </footer>
-    </div>
-
   </body>
 
 </html>
