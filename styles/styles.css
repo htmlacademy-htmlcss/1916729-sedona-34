@@ -438,7 +438,77 @@ body {
 
 /**Catalog flex**/
 
+.inner-header-title {
+  margin: 0;
+  padding: 35px 0 0 70px;
+}
+.inner-filter {
+  display: flex;
+  flex-direction: column;
+  height: 403px;
+}
+.catalog-hotels {
+  padding: 0;
+  margin: 71px 0 70px 70px;
+}
+.catalog-hotels-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.breadcrumbs-container{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.catalog-filter {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.breadcrumbs-link {
+  margin: 0;
+  padding: 10px 0 40px 110px;
+}
+.breadcrumbs {
+  margin: 0;
+  padding: 0;
+}
 
+.hotel-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  justify-content: flex-start;
+  padding: 0 38px 20px 73px;
+  margin: 160px 0;
+}
+.hotel-cards {
+  width: 340px;
+  height: 438px;
+  margin: 0;
+  padding: 0;
+}
+.pagination {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+}
+.pagination-item {
+  color: #ffffff;
+  background-color: #82B3D3;
+  border-radius: 5px;
+  margin: 0 8px;
+  padding: 12px 24px;
+}
+.search-hotels-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+}
 
 
 
@@ -467,7 +537,7 @@ body {
   background-color: #82B3D3;
   background-image: url("../images/catalog-background.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 100% auto;
 }
 
 .main-background {
@@ -531,7 +601,7 @@ body {
 
 
 
-/** stealth
+
 .visually-hidden {
 	position: absolute;
 	clip: rect(1px, 1px, 1px, 1px);
@@ -541,7 +611,6 @@ body {
 	width: 1px;
 	overflow: hidden;
 }
-*/
 
 
 ul {
