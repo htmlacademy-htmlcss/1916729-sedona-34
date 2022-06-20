@@ -270,12 +270,11 @@ body {
 
 .navigation {
   display: flex;
-  width: 1200px;
   height: 65px;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  margin: 0 auto;
+
 
 }
 .navigation-list {
@@ -431,8 +430,6 @@ body {
   justify-content: space-between;
   text-align: center;
   align-items: center;
-  margin: 0 auto;
-  width: 1200px;
 }
 
 .footer-social-list {
