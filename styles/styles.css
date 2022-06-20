@@ -76,7 +76,7 @@ body {
 }
 
 .benefits-title{
-
+  margin: 0;
   padding: 30px 0;
 }
 
@@ -84,7 +84,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   text-align: center;
-  margin: 0;
+  margin: 0 0 80px;
   padding: 0;
 
 
@@ -357,22 +357,17 @@ body {
 .benefits-list {
   display: flex;
   flex-direction: row;
-
-
-  margin-top: 80px;
   padding: 0;
 }
 
 .benefits-item {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-
-
+  justify-content: flex-end;
+  align-items: stretch;
   width: 400px;
   height: 384px;
+
 
 }
 .benefits-container{
@@ -553,6 +548,7 @@ body {
 .main-background {
   background-color: #349ef5;
   background-image: url("../images/index-background.jpg");
+  height: 485px;
   background-repeat: no-repeat;
   background-size: 100% auto;
 
@@ -570,7 +566,9 @@ body {
 .benefits-icon-house {
   background-image: url("../images/icon/house-icon.svg");
   background-repeat: no-repeat;
-  background-position: top;
+  background-position-y: 80px;
+  background-position-x: center;
+  background-color: rgba(131, 179, 211, 0.12);
 
 
 }
@@ -578,13 +576,21 @@ body {
 .benefits-icon-burger {
   background-image: url("../images/icon/burger-icon.svg");
   background-repeat: no-repeat;
-  background-position: top;
+  background-position-y: 80px;
+  background-position-x: center;
+
+
+  background-color: #FFFFFF;
 
 }
 .benefits-icon-gifts {
   background-image: url("../images/icon/gift-icon.svg");
   background-repeat: no-repeat;
-  background-position: top;
+  background-position-y: 80px;
+  background-position-x: center;
+
+
+  background-color: rgba(131, 179, 211, 0.12);
 
 }
 
