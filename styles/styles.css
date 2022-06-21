@@ -26,7 +26,7 @@ body {
   font-size: 22px;
   line-height: 26px;
   color: #000000;
-  background-color: #ffffff;
+  background-color: #F2F2F2;
 }
 
 
@@ -36,8 +36,17 @@ body {
   line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
+
   background-color:  #756157;
   color: #ffffff;
+}
+.navigation-search-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  width: 160px;
+  height: 37px;
 }
 
 .navigation-link {
@@ -131,7 +140,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   margin: 0;
-  padding: 29px;
+  padding: 91px 0  29px;
 }
 .search-hotel-description {
   text-align: center;
@@ -145,11 +154,23 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-align: center;
+  margin: 94px 0 29px;
   text-transform: uppercase;
   color: #ffffff;
 }
+.field {
+
+  width: 578px;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ffffff;
+  border-radius: 10px 0 0 10px;
+  height: 58px;
+  padding-left: 22px;
+}
 
 .page-footer-description {
+  margin: 0 0 46px;
   text-align: center;
   color: #ffffff;
 }
@@ -181,15 +202,20 @@ body {
 }
 
 .button-search {
+  display: flex;
   font-family: inherit;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-  background-color:#756157;
-  color: #ffffff;
+  justify-content: center;
+  align-items:center;
   text-transform: uppercase;
   text-decoration: none;
-
+  border-radius: 4px;
+  width: 574px;
+  height: 60px;
+  color: #ffffff;
+  background-color:#756157;
 }
 .inner-header-title {
   font-family: "inherit";
@@ -270,11 +296,7 @@ body {
   line-height: 21px;
   color: #333333;
 }
-.search-hotels {
-  font-size: 18px;
-  line-height: 21px;
-  color: #333333;
-}
+
 .pagination-link {
   font-weight: 700;
   font-size: 20px;
@@ -432,7 +454,7 @@ body {
 }
 .search-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   flex-direction: column;
   text-align: center;
   align-items: center;
@@ -445,14 +467,28 @@ body {
 .newsletter-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  height: 411px;
 
 }
+
 .newsletter-button {
+  font-family: inherit;
+  width: 200px;
+  height: 60px;
+  margin: 0;
+  padding: 0;
 
   border: 1px solid #82B3D3;
-  border-radius: 5px;
+  border-radius: 0 10px 10px 0;
+}
+.form-wrapper  {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin: 0;
+  padding: 0;
 }
 .footer-container {
   display: flex;
@@ -552,24 +588,15 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
 /**sticky footer**/
 .main-container {
   flex-grow: 1;
 }
-
 /**Центрирование страницы*/
 .page-container {
   margin: 0 auto;
   width: 1200px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 /**Фоновые изображения**/
 .inner-filter {
@@ -578,14 +605,12 @@ body {
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
-
 .main-background {
   background-color: #349ef5;
   background-image: url("../images/index-background.jpg");
   height: 485px;
   background-repeat: no-repeat;
   background-size: 100% auto;
-
 }
 .newsletter {
   background-color:  #82B3D3;
@@ -594,8 +619,6 @@ body {
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
-
-
 /**Декоративные элементы**/
 .benefits-icon-house {
   background-image: url("../images/icon/house-icon.svg");
@@ -603,31 +626,21 @@ body {
   background-position-y: 80px;
   background-position-x: center;
   background-color: rgba(131, 179, 211, 0.12);
-
-
 }
-
 .benefits-icon-burger {
   background-image: url("../images/icon/burger-icon.svg");
   background-repeat: no-repeat;
   background-position-y: 80px;
   background-position-x: center;
-
-
   background-color: #FFFFFF;
-
 }
 .benefits-icon-gifts {
   background-image: url("../images/icon/gift-icon.svg");
   background-repeat: no-repeat;
   background-position-y: 80px;
   background-position-x: center;
-
-
   background-color: rgba(131, 179, 211, 0.12);
-
 }
-
 .social-icon-vk {
   background-image: url("../images/icon/social-icon-vkontakte.svg");
   background-repeat: no-repeat;
@@ -645,9 +658,6 @@ body {
   background-repeat: no-repeat;
   height: 40px;
 }
-
-
-
 
 
 
