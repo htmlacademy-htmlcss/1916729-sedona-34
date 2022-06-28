@@ -322,11 +322,10 @@ body {
   font-size: 18px;
   line-height: 21px;
   width: 267px;
-  height: 42px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   margin: 0;
-  padding: 14px 0 0 20px;
+  padding: 0;
 }
 
 summary {
@@ -356,6 +355,7 @@ details[open] summary::before {
 .navigation-list {
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
 
 
   width: 490px;
@@ -374,6 +374,7 @@ details[open] summary::before {
   max-width: 300px;
   margin-right: 70px;
   margin-left: auto;
+
 
 }
 .site-container {
@@ -542,7 +543,7 @@ details[open] summary::before {
 }
 .catalog-hotels {
   padding: 0;
-  margin: 71px 0 70px 70px;
+  margin: 0;
 }
 .catalog-hotels-wrapper {
   display: flex;
@@ -559,6 +560,7 @@ details[open] summary::before {
   align-items: center;
 }
 .breadcrumbs-link {
+
   margin: 0;
   padding: 10px 0 40px 110px;
 }
@@ -578,7 +580,7 @@ details[open] summary::before {
   margin: 70px 0 0 92px;
 }
 .hotel-cards {
-  width: 358px;
+  width: 340px;
   height: 438px;
   margin: 0;
   padding: 0;
@@ -638,32 +640,33 @@ details[open] summary::before {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  padding: 62px 0 0 72px;
   margin: 0;
 }
 .filter-wrapper {
   display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
+  justify-content: stretch;
+  width: 1057px;
+  margin: 57px 71px 0 72px;
 
 }
 
 .card-wrapper {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 300px;
-  height: 37px;
-  margin: 0;
   padding: 16px 0;
 
 }
 .hotel-cards-button {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   border-radius: 4px;
   width: 140px;
   height: 37px;
+  margin-bottom: 10px;
 }
 .button-favorit {
   background-color:  #82B3D3;
@@ -704,6 +707,11 @@ details[open] summary::before {
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
+.hotels-cards-image {
+  width: 300px;
+  object-fit: contain;
+}
+
 /**Декоративные элементы**/
 .benefits-icon-house {
   background-image: url("../images/icon/house-icon.svg");
