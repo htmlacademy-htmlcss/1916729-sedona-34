@@ -220,8 +220,9 @@ body > div {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
-  margin: 5px 0 5px 0;
-  padding: 0 0 0 222px;
+  width: 720px;
+  margin: 5px 0 5px 41px;
+  padding: 0 0 0 0/*222px*/;
 }
 
 /*Шрифты на форму*/
@@ -330,11 +331,15 @@ body > div {
   background-color: #756157;
 }
 .hotel-rating {
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   color: #333333;
+  margin-left: 20px;
+  padding: 3px 0 0 23px;
 }
+
 .hotel-cards-price {
 
   width: 140px;
@@ -610,12 +615,34 @@ details[open] summary::after {
 
 .footer-social-list {
   display: flex;
-  margin: 6px 0 1px 0;
-  padding: 8px 0 0 11px;
+  flex-direction: row;
+  align-items: center;
+  width: 142px;
+  padding: 0;
+  margin: 0;
+
 
 
 }
 
+
+.footer-social-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+
+
+  width: 47px;
+  height: 40px;
+}
+
+.icon-vk-svg {
+  position: relative;
+  top: -1px;
+
+}
 
 .footer-social {
   display: flex;
@@ -669,37 +696,53 @@ details[open] summary::after {
   flex-wrap: wrap;
   justify-content: flex-start;
   padding: 0;
-  margin: 50px 0 0 72px;
+  margin: 56px 0 0 73px;
 }
 .hotel-cards {
+  list-style: none;
   width: 340px;
   height: 438px;
-  margin-right: 15px;
+  margin-right: 18px;
+}
+.hotel-cards:nth-child(3) {
+  margin-right: 0;
+}
+.hotel-rating-star {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 16px 20px 20px 20px;
+
+  width: 300px;
 
 }
+
+
+
 .pagination {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   padding-left: 73px;
-
-
-
 }
 
 .pagination-current {
-
+  display: block;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  align-self: center;
   background-color: #F2F2F2;
   color: #333333;
   border-radius: 5px;
-  margin: 0 8px;
-  padding: 12px 24px;
+  margin-right: 8px;
+  padding: 11px 24px 12px 23px;
 
 
 }
 .pagination-link {
-  display: block;
-  box-sizing: border-box;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -709,12 +752,15 @@ details[open] summary::after {
   color: #ffffff;
 }
 .pagination-item {
+  display: block;
+  box-sizing: border-box;
   width: 60px;
-  text-align: center;
+  height: 60px;
+  align-self: center;
   background-color: #82B3D3;
   color: #ffffff;
   border-radius: 5px;
-  padding: 12px 0;
+  padding: 11px 24px 12px 23px;
 }
 .pagination-current-link {
   color: #333333;
@@ -722,12 +768,18 @@ details[open] summary::after {
 .pagination-item:not(:last-child) {
   margin-right: 8px;
 }
+.pagination-item:last-child {
+  padding: 11px 18px 12px 18px;
+}
 
 .search-hotels-wrapper {
   display: flex;
+  width: 1056px;
+  height: 60px;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
+  margin: 95px 0 27px 0;
 }
 .catalog-filter-list {
   padding: 0;
@@ -763,7 +815,7 @@ details[open] summary::after {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  padding-top: 8px;
+  padding-top: 3px;
   margin: 0;
   width: 338px;
 }
@@ -799,7 +851,12 @@ details[open] summary::after {
   background-color:  #82B3D3;
 }
 .search-hotels {
-  padding-right: 71px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  margin: 6px 0 0 268px;
+
 }
 
 
@@ -880,9 +937,7 @@ details[open] summary::after {
 }
 
 
-.button-social {
-  margin-right: 27px;
-}
+
 .button-social > svg {
   fill: #83B3D3;
 }
@@ -903,13 +958,10 @@ details[open] summary::after {
 
 
 
-
-
 .about-text {
-  background-image: url("../images/logo-academy.svg");
-  background-repeat: no-repeat;
-  height: 40px;
+  padding: 9px 0 0 42px;
 }
+
 
 
 
