@@ -405,6 +405,7 @@ body > div {
   background-position: center right 36px;
 
 }
+
 .dropdown-menu {
   list-style: none;
   position: relative;
@@ -418,6 +419,25 @@ body > div {
 
 summary {
   list-style: none
+}
+.dropdown-page-bottom {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  width: 156px;
+  height: 45px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  margin-left: 53px;
+}
+
+.dropdown-sorting {
+  position: relative;
+  background-image: url("../images/icon/sorting-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center right 36px;
+  left: 18px;
+  top: 12px;
 }
 /*
 details summary::after {
@@ -827,7 +847,7 @@ details[open] summary::after {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  margin: 95px 0 27px 73px;
+  margin: 96px 0 27px 74px;
 }
 .catalog-filter-list {
   padding: 0;
@@ -907,8 +927,8 @@ details[open] summary::after {
   font-size: 18px;
   line-height: 21px;
   text-align: center;
-  margin: 2px 0 0 268px;
-
+  margin: 4px 0 0 257px;
+  padding-left: 11px;
 }
 .select-control {
   position: relative;
