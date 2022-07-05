@@ -462,7 +462,7 @@ details[open] summary::after {
 }
 
 .navigation-item {
-  padding-right: 34px;
+  margin-right: 34px;
 }
 .navigation-search {
 
@@ -1080,8 +1080,12 @@ details[open] summary::after {
   fill: rgba(255, 255, 255, 0.3);
   color: rgba(255, 255, 255, 0.3);
 }
-.dropdown:hover,
-.dropdown:focus {
+.dropdown:hover {
+  outline: 2px solid #68A2CA;
+  border-radius: 4px;
+
+}
+.dropdown:focus-within {
   outline: 2px solid #68A2CA;
   border-radius: 4px;
 }
