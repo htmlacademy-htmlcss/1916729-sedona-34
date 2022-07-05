@@ -1095,11 +1095,12 @@ details[open] summary::after {
 }
 .button-reset:hover,
 .button-reset:focus {
-  color: rgba(255, 255, 255, 0.705);
+  text-shadow: -1px -1px 1px #0f0f0f,
+                2px 2px 1px #080307;
 
 }
 .button-reset:active {
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.747);
 
 }
 /**Центрирование страницы*/
