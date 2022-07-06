@@ -64,7 +64,6 @@ body > div {
   bottom: 1px;
   left: 19px;
   margin: auto 0;
-  color: black;
 }
 
 .navigation-list li:nth-child(2) .navigation-search-link::after {
@@ -1017,11 +1016,35 @@ details[open] summary::after {
 .range {
   width: 288px;
 
-
 }
 
 
+
+
+
+
 /*Состояния*/
+.navigation-search-link:hover {
+  outline: 3px solid #333333;
+  outline-offset: 10px;
+  border-radius: 3px;
+  margin-bottom: 8px;
+
+}
+.navigation-search-link:active {
+  outline: none;
+}
+
+.navigation-search-link:focus {
+  outline: none;
+}
+
+
+
+
+
+
+
 .range-toggle:active,
 .range-toggle:focus {
   border: 3px solid #83B3D3;
@@ -1104,7 +1127,9 @@ details[open] summary::after {
 }
 .navigation-search-button:hover,
 .navigation-search-button:focus {
+  outline: auto;
   background-color:#615048;
+  margin: 0;
 }
 .navigation-search-button:active {
   color: rgba(255, 255, 255, 0.3);
@@ -1292,6 +1317,27 @@ details[open] summary::after {
   margin-right: 8px;
 }
 
+.rating-four-star {
+  background-image: url("../images/icon/rating-four-star-icon.svg");
+  background-repeat: repeat-x;
+  width: 94px;
+  height: 38px;
+  margin-right: 46px;
+}
+.rating-two-star {
+  background-image: url("../images/icon/rating-four-star-icon.svg");
+  background-repeat: repeat-x;
+  width: 48px;
+  height: 38px;
+  margin-right: 92px;
+}
+.rating-three-star {
+  background-image: url("../images/icon/rating-four-star-icon.svg");
+  background-repeat: repeat-x;
+  width: 69px;
+  height: 38px;
+  margin-right: 71px;
+}
 
 
 
