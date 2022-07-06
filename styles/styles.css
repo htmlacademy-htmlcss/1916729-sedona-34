@@ -305,7 +305,7 @@ body > div {
   line-height: 26px;
   color: #ffffff;
   text-transform: capitalize;
-  padding-bottom: 30px;
+  padding-bottom: 34px;
   padding-right: 70px;
 }
 .catalog-filter-list {
@@ -327,6 +327,7 @@ body > div {
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
+  text-transform:none;
 }
 .hotel-cards-title {
   font-family: "PT Sans", sans-serif;
@@ -910,14 +911,28 @@ details[open] summary::after {
   padding: 0;
   margin: 0;
 }
+.catalog-filter {
+  display: flex;
+}
 .catalog-filter-group {
   border: none;
+  margin-right: 75px;
+  margin-bottom: 55px;
   margin: 0;
   padding: 0;
 }
+.catalog-filter-group:nth-child(3) {
+  margin-left: 153px;
+  margin-bottom: 56px;
+}
+
+
+
 .button-wrapper {
   display: flex;
   flex-direction: column;
+  margin-left: 70px;
+  margin-top: 42px;
 
 }
 .button-submit {
@@ -932,6 +947,7 @@ details[open] summary::after {
   border: none;
   background-color: transparent;
   outline: none;
+
 }
 
 .search-holes {
@@ -987,20 +1003,20 @@ details[open] summary::after {
   margin: 4px 0 0 257px;
   padding-left: 11px;
 }
-
+.range {
+  position: relative;
+}
 .range-scale {
   position: relative;
-  top: 75px;
-
+  width: 288px;
+  top: 28px;
   height: 4px;
-
+  left: 0;
   background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-
 }
 .range-bar {
   position: absolute;
-
+  width: 22px;
   height: 4px;
   background-color: #FFFFFF;
 
@@ -1010,45 +1026,49 @@ details[open] summary::after {
   width: 20px;
   height: 20px;
   background-color: #ffffff;
-  border: 1px solid #ffffff;
   border-radius: 5px;
   cursor: pointer;
-  top: 0;
+  border: none;
+
 }
 .toggle-max {
   top: -8px;
-  right: 0;
+  right: -9px;
 }
 .toggle-min {
   top: -8px;
   left: 0;
 }
 .range-wrapper-inputs {
-  width: 288px;
+  position: relative;
   display: flex;
-  justify-content: center;
+
 }
 
 .catalog-filter-label {
   display: flex;
-  margin-right: 5px;
+  margin: 0;
 }
 
 .range-input {
   width: 144px;
   box-sizing: border-box;
-  font-family: inherit;
+  font: inherit;
   font-size: 18px;
   line-height: 21px;
   text-align: start;
   background-color: transparent;
-  color: #ffffff;
+  background-image: url("../images/text-input-to.png");
+  background-repeat: no-repeat;
+  background-position: center right 14px;
   border: 2px solid #FFFFFF;
+  color: #ffffff;
   border-radius: 4px;
   padding-top: 11px;
   padding-bottom: 12px;
   padding-left: 18px;
   appearance: textfield;
+  opacity: 1;
 }
 
 .range-input::-webkit-outer-spin-button,
@@ -1056,12 +1076,31 @@ details[open] summary::after {
   appearance: none;
   margin: 0;
 }
-.range {
-  width: 288px;
 
+.range-input:hover {
+  opacity: 0.6;
 }
-
-
+.range-input:focus {
+  box-shadow: 0 0 0 3px #81B3D2,
+    inset 0 0 0 3px #81B3D2;
+  outline: none;
+  z-index: 1;
+}
+.range-input:not(:placeholder-show) {
+  background-color: #756257;
+  box-shadow: none;
+}
+.catalog-filter-label:nth-child(1) .range-input {
+  border-radius: 4px 0 0 4px;
+}
+.catalog-filter-label:nth-child(2) .range-input {
+  border-radius: 0 4px 4px 0;
+}
+.catalog-filter-label:nth-child(2) .range-input {
+  background-image: url("../images/text-input-from.png");
+  background-position: center right 17px;
+  background-repeat: no-repeat;
+}
 
 
 
@@ -1082,25 +1121,16 @@ details[open] summary::after {
   outline: none;
 }
 
+.range-toggle:active {
+  border: 2px solid #83B3D3;
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
 
-
-
-
-
-
-.range-toggle:active,
+}
 .range-toggle:focus {
   border: 3px solid #83B3D3;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
 }
-.range-toggle:hover {
-  background: #FFFFFF;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-  border-radius: 5px;
-
-}
-
 
 
 .navigation-link-current::before{

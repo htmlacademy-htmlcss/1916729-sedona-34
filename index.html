@@ -160,6 +160,51 @@
           <span class="visually-hidden">Сайт html academy</span>
         </a>
       </footer>
+      <div class="modal-contaier">
+        <div class="modal-search">
+          <button class="modal-close-button" type="button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <section class="modal-content">
+            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          </section>
+          <form class="seatch-form" action="https://echo.htmlacademy.ru" method="post">
+            <p class="field-group">
+              <label class="search-form-label" for="arrival-date">Дата Заезда:</label>
+              <input class="search-form-field search-form-date-field" name="arrival-date" id="arrival-date" type="text" placeholder="27 апреля 2020" required>
+            </p>
+            <p class="search-form-comments">Мы не можем отправить вас в прошлое.</p>
+            <p class="field-group">
+              <label class="search-form-label" for="departure-date">Дата Выезда:</label>
+              <input class="search-form-field search-form-date-field" id="departure-date" type="text" name="departure-date" placeholder="1 сентября 2020" required>
+            </p>
+            <p class="search-form-comments">На эти даты есть свободные номера. Пока есть.</p>
+            <div class="modal-buttons-container">
+              <div class="guest-quantity-field-adult">
+                <label class="search-form-label" for="adult">Взрослые</label>
+                <div class="quantity-field">
+                  <button class="button button-minus" type="button">
+                    <span class="visually-hidden">Уменьшить количество взрослых</span>
+                  </button>
+                  <input class="search-form-field search-form-quantity-field" id="adult" type="number" name="adult" placeholder="2" min="1"max="999" required>
+                  <button class="button button-plus" type="button">
+                    <span class="visually-hidden">Увеличить количество взрослых</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+
+        </div>
+      </div>
+
+
+
+
+
+
+
+
     </div>
   </body>
 
