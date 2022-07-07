@@ -296,7 +296,8 @@ body > div {
   color: #ffffff;
 }
 .catalog-filter-item {
-  padding: 0 0 15px 16px;
+  padding: 0;
+  list-style-type: none;
 }
 .catalog-filter-title {
   font-family: "PT Sans", sans-serif;
@@ -305,13 +306,17 @@ body > div {
   line-height: 26px;
   color: #ffffff;
   text-transform: capitalize;
-  padding-bottom: 34px;
+  padding-bottom: 26px;
   padding-right: 70px;
+  padding-left: 2px;
 }
 .catalog-filter-list {
   font-size: 18px;
   line-height: 21px;
   color: #ffffff;
+  margin: 0;
+  list-style-type: none;
+  padding: 0 0 4px 4px;
 
 }
 .button-submit {
@@ -909,7 +914,8 @@ details[open] summary::after {
 }
 .catalog-filter-list {
   padding: 0;
-  margin: 0;
+  margin-top: 3px;
+  list-style-type: none;
 }
 .catalog-filter {
   display: flex;
@@ -1005,11 +1011,12 @@ details[open] summary::after {
 }
 .range {
   position: relative;
+  bottom: -6px;
 }
 .range-scale {
   position: relative;
   width: 288px;
-  top: 28px;
+  top: 25px;
   height: 4px;
   left: 0;
   background-color: rgba(255, 255, 255, 0.3);
@@ -1756,52 +1763,65 @@ input::-webkit-inner-spin-button {
 .control {
   position: relative;
   display: block;
-  padding-left: 40px;
-  margin-bottom: 15px;
+  padding-left: 43px;
+  margin-bottom: 13px;
 }
+
 .control-mark {
   position: absolute;
-  top: 2px;
-  left: 0;
+  top: 1px;
+  left: 4px;
   width: 20px;
+  height: 20px;
   border-radius: 4px;
   background-color: #ffffff;
 }
-.control-input[type-radio] + .control-mark {
-  border-radius: 50%;
-}
 .control:hover .control-mark {
   background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 4px;
+}
+.control:focus .control-mark {
+  outline: 3px solid #83B3D3;
+  border-radius: 4px;
 }
 .control:active .control-mark {
   background-color: rgba(255, 255, 255, 0.3);
 }
+
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
 .control-input:focus + .control.mark {
   opacity: 0.6;
   box-shadow: 0 0 0 3px #83b3d3;
 }
 .control-input[type="checkbox"]:checked + .control-mark::before {
   position: absolute;
-  top: -1px;
+  top: -3px;
   left: 5px;
   content: url("../images/icon/checkbox-arrow.svg");
 }
+.control-label{
+  line-height: 23px;
 
+}
 .control-input[type="radio"]:checked + .control-mark::before {
   position: absolute;
   content: "";
-  top: 5px;
-  left: 5px;
-  width: 10px;
-  height: 10px;
-  background-color: #242424;
+  top: 4px;
+  left: 4px;
+  width: 12px;
+  height: 12px;
+  background-color: #3F5E72;
   border-radius: 50%;
 }
 .control-input[type="radio"]:focus {
   border: 3px solid #83B3D3;
 
 }
-input[type='number'] {
+input[type="number"] {
   -moz-appearance: textfield;
 }
 
