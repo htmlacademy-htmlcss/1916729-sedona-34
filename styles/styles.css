@@ -197,6 +197,7 @@ body > div {
   font-size: 18px;
   line-height: 21px;
   text-align: center;
+  align-items: center;
   margin: 0 0 80px;
   padding: 0;
 
@@ -454,6 +455,7 @@ summary {
   list-style: none
 }
 .dropdown-page-bottom {
+  position: relative;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -471,8 +473,8 @@ summary {
   content: "";
   box-sizing: border-box;
   position: absolute;
-  top: 1627px;
-  right: 366px;
+  top: 16px;
+  right: 12px;
   width: 17px;
   height: 15px;
   background-image: url(../images/icon/sorting-icon.svg);
@@ -483,7 +485,7 @@ summary {
 
 .navigation {
   display: flex;
-  height: 65px;
+  min-height: 65px;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
@@ -495,7 +497,7 @@ summary {
   justify-content: flex-start;
   flex-wrap: wrap;
   width: 490px;
-  margin: 0 0 4px 48px;
+  margin: 6px 0 0 46px;;
   padding: 0;
 }
 
@@ -574,6 +576,7 @@ summary {
 
 .benefits-list {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   padding: 0;
 }
@@ -1147,7 +1150,7 @@ summary {
   content: "";
   width: 93px;
   height: 0;
-  top: 63px;
+  top: 64px;
   border-bottom: 2px solid #756257;
 }
 

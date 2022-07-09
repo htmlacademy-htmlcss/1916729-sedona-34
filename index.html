@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Туристический сайт:Седона</title>
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="icon" href="favicon.ico" sizes="32x32">
   </head>
 
   <body>
@@ -164,7 +165,8 @@
             </a>
           </li>
         </ul>
-        <p class="number">+7 (812) 812-12-12</p>
+        <h2 class="visually-hidden">Контакты</h2>
+        <a class="number" href="tel:+781281212">+7 (812) 812-12-12</a>
         <a class="htmlacademy-link about-text" href="https://htmlacademy.ru/">
           <svg width="115" height="33" viewBox="0 0 115 33" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -186,7 +188,8 @@
           <form class="seatch-form" action="https://echo.htmlacademy.ru" method="post">
             <p class="field-group">
               <label class="search-form-label" for="arrival-date">Дата Заезда:</label>
-              <input class="search-form-field search-form-date-field" name="arrival-date" id="arrival-date" type="text" placeholder="27 апреля 2020" required>
+              <input class="search-form-field search-form-date-field" name="arrival-date" id="arrival-date" type="text"
+                placeholder="27 апреля 2020" required>
             </p>
             <p class="search-form-comments">Мы не можем отправить вас в прошлое.</p>
             <p class="field-group">
@@ -243,7 +246,8 @@
                       <path d="M0 0v1h13V0H0Z" /></svg>
                     <span class="visually-hidden">Уменьшить количество детей</span>
                   </button>
-                  <input class="search-form-field" id="children" type="number" name="children" min="1" max="999" required placeholder="1" >
+                  <input class="search-form-field" id="children" type="number" name="children" min="1" max="999"
+                    required placeholder="1">
                   <button class="button button-plus" type="button">
                     <svg aria-hidden="true" width="13" height="13" viewBox="0 0 13 13"
                       xmlns="http://www.w3.org/2000/svg">
@@ -259,4 +263,5 @@
       </div>
     </div>
   </body>
+
 </html>
