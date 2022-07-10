@@ -1627,6 +1627,7 @@ summary {
 }
 .modal-find-button {
   display: flex;
+  font-family: inherit;
   justify-content: center;
   align-items: center;
   width: 100%;
