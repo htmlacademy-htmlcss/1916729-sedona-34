@@ -227,7 +227,7 @@ body > div {
   font-size: 30px;
   line-height: 36px;
   text-align: center;
-  margin: 93px 0 28px;
+  margin: 95px 0 28px;
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -401,10 +401,9 @@ body > div {
   font-size: 18px;
   line-height: 21px;
   width: 286px;
-  height: 45px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
-  margin-left: 189px;
+  margin-left: 191px;
   margin-right: 78px;
 
 
@@ -497,7 +496,7 @@ summary {
   justify-content: flex-start;
   flex-wrap: wrap;
   width: 490px;
-  margin: 6px 0 0 46px;;
+  margin: 0 0 0 18px;
   padding: 0;
 }
 
@@ -517,10 +516,14 @@ summary {
   margin: 0 auto;
 }
 .page-header-logo {
-  position: relative;
   display: block;
-  margin: 0 auto;
+}
+.navigation-logo {
   margin-left: 70px;
+  margin-right: 30px;
+  margin-bottom: -10px;
+  z-index: 1;
+  box-sizing: border-box;
 }
 .welcome-container {
   display: block;
@@ -712,8 +715,8 @@ summary {
 /**Catalog flex**/
 
 .inner-header-title {
-  margin: 35px 0 0 70px;
-  padding: 0;
+  margin: 0 0 0 70px;
+  padding-top: 34px;
 }
 .inner-filter {
   display: flex;
@@ -969,8 +972,8 @@ summary {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 1057px;
-  margin: 55px 71px 0 72px;
+  width: 1056px;
+  margin: 52px 71px 0 72px;
 
 }
 
@@ -1399,7 +1402,7 @@ summary {
   display: block;
   width: 300px;
   height: 211px;
-  padding: 20px 20px 0 20px;
+  padding: 21px 18px 1px 23px;
   object-fit: contain;
 }
 
