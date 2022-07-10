@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Туристический сайт:Седона</title>
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="icon" href="favicon.ico" sizes="32x32" type="image/png">
   </head>
 
   <body>
@@ -52,6 +53,7 @@
         <h1 class="advantage">Седона — небольшой городок в Аризоне,<br>
           заслуживающий большего!</h1>
         <p class="advantage-child">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+        <h2 class="visually-hidden">Преимущества</h2>
         <ul class="advantage-list">
           <li class="advantage-item">
             <div class="advantage-container">
@@ -115,7 +117,7 @@
           <h2 class="search-hotel">Заинтересовались?</h2>
           <p class="search-hotel-description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие
             предложения
-            гостиниц в Седоне</p>
+            гостиниц в Седоне &#160;</p>
           <a class="button-search" href="#">Поиск гостиницы в седоне</a>
         </div>
         <section class="newsletter">
@@ -164,7 +166,8 @@
             </a>
           </li>
         </ul>
-        <p class="number">+7 (812) 812-12-12</p>
+        <h2 class="visually-hidden">Контакты</h2>
+        <a class="number" href="tel:+781281212">+7 (812) 812-12-12</a>
         <a class="htmlacademy-link about-text" href="https://htmlacademy.ru/">
           <svg width="115" height="33" viewBox="0 0 115 33" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -186,28 +189,29 @@
           <form class="seatch-form" action="https://echo.htmlacademy.ru" method="post">
             <p class="field-group">
               <label class="search-form-label" for="arrival-date">Дата Заезда:</label>
-              <input class="search-form-field search-form-date-field" name="arrival-date" id="arrival-date" type="text" placeholder="27 апреля 2020" required>
+              <input class="search-form-field search-form-date-field" name="arrival-date" id="arrival-date" type="text"
+                placeholder="27 апреля 2020" required>
             </p>
-            <p class="search-form-comments">Мы не можем отправить вас в прошлое.</p>
+            <p class="search-form-comments search-form-comments-false">Мы не можем отправить вас в прошлое.</p>
             <p class="field-group">
               <label class="search-form-label" for="departure-date">Дата Выезда:</label>
               <input class="search-form-field search-form-date-field" id="departure-date" type="text"
-                name="departure-date" placeholder="1 сентября 2020" required>
+                name="departure-date" placeholder="1 сентября 2021" required>
             </p>
             <p class="search-form-comments">На эти даты есть свободные номера. Пока есть.</p>
             <div class="modal-buttons-container">
               <div class="guest-quantity-field-adult">
                 <label class="search-form-label" for="adult">Взрослые</label>
                 <div class="quantity-field">
-                  <button class="button button-minus" type="button">
-                    <svg aria-hidden="true" focusable="false" width="13" height="1" viewBox="0 0 13 1"
+                  <button class="button-modal button-minus" type="button">
+                   <svg aria-hidden="true" focusable="false" width="13" height="1" viewBox="0 0 13 1"
                       xmlns="http://www.w3.org/2000/svg">
                       <path d="M0 0v1h13V0H0Z" /></svg>
                     <span class="visually-hidden">Уменьшить количество взрослых</span>
                   </button>
                   <input class="search-form-field search-form-quantity-field" id="adult" type="number" name="adult"
                     placeholder="2" min="1" max="999" required>
-                  <button class="button button-plus" type="button">
+                  <button class="button-modal button-plus" type="button">
                     <svg aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 13 13"
                       xmlns="http://www.w3.org/2000/svg">
                       <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" /></svg>
@@ -238,13 +242,14 @@
                     вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                 </span>
                 <div class="quantity-field">
-                  <button class="button button-minus" type="button">
+                  <button class="button-modal button-minus" type="button">
                     <svg aria-hidden="true" width="13" height="1" viewBox="0 0 13 1" xmlns="http://www.w3.org/2000/svg">
                       <path d="M0 0v1h13V0H0Z" /></svg>
                     <span class="visually-hidden">Уменьшить количество детей</span>
                   </button>
-                  <input class="search-form-field" id="children" type="number" name="children" min="1" max="999" required placeholder="1" >
-                  <button class="button button-plus" type="button">
+                  <input class="search-form-field" id="children" type="number" name="children" min="1" max="999"
+                    required placeholder="1">
+                  <button class="button-modal button-plus" type="button">
                     <svg aria-hidden="true" width="13" height="13" viewBox="0 0 13 13"
                       xmlns="http://www.w3.org/2000/svg">
                       <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" /></svg>
@@ -259,4 +264,5 @@
       </div>
     </div>
   </body>
+
 </html>

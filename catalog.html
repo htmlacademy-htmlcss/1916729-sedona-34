@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Гостииницы Седоны</title>
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="icon" href="favicon.ico" sizes="32x32" type="image/png">
   </head>
 
   <body>
@@ -128,10 +129,10 @@
                 <div class="range">
                   <div class="range-wrapper-inputs">
                     <label class="catalog-filter-label" for="min-price">
-                      <input class="range-input" type="number" name="min-price" id="min-price" placeholder="0">
+                      <input class="range-input" type="number" name="min-price" id="min-price" value="0">
                     </label>
                     <label class="catalog-filter-label" for="max-price">
-                      <input class="range-input" type="number" name="max-price" id="max-price" placeholder="9000">
+                      <input class="range-input" type="number" name="max-price" id="max-price" value="9000">
                     </label>
                   </div>
                   <div class="range-scale">
@@ -163,33 +164,20 @@
             </div>
           </details>
           <a class="card-grid-toggle button-light" href="#">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M20 17h-4v6h4v-6ZM32 17h-4v6h4v-6ZM26 17h-4v6h4v-6ZM20 25h-4v6h4v-6ZM32 25h-4v6h4v-6ZM26 25h-4v6h4v-6ZM4 2h40v-4H4v4Zm42 2v40h4V4h-4Zm-2 42H4v4h40v-4ZM2 44V4h-4v40h4Zm2 2a2 2 0 0 1-2-2h-4a6 6 0 0 0 6 6v-4Zm42-2a2 2 0 0 1-2 2v4a6 6 0 0 0 6-6h-4ZM44 2a2 2 0 0 1 2 2h4a6 6 0 0 0-6-6v4ZM4-2a6 6 0 0 0-6 6h4a2 2 0 0 1 2-2v-4Z"
-                fill="#000" /></svg>
+            <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" fill="#000"/></svg>
             <span class="visually-hidden">Показать карточки</span>
           </a>
-          <a class="card-grid-toggle" href="#">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M32 29H16v2h16v-2ZM30 19v6H18v-6h12Zm2-2H16v10h16V17Z" fill="#000" />
-              <path
-                d="M4 2h40v-4H4v4Zm42 2v40h4V4h-4Zm-2 42H4v4h40v-4ZM2 44V4h-4v40h4Zm2 2a2 2 0 0 1-2-2h-4a6 6 0 0 0 6 6v-4Zm42-2a2 2 0 0 1-2 2v4a6 6 0 0 0 6-6h-4ZM44 2a2 2 0 0 1 2 2h4a6 6 0 0 0-6-6v4ZM4-2a6 6 0 0 0-6 6h4a2 2 0 0 1 2-2v-4Z"
-                fill="#E5E5E5" /></svg>
+          <a class="card-grid-toggle button-disable" href="#">
+            <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" fill="#000"/></svg>
             <span class="visually-hidden">Слайд шоу</span>
           </a>
-          <a class="card-grid-toggle" href="#">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M18 17h-2v2h2v-2ZM32 17H20v2h12v-2ZM18 21h-2v2h2v-2ZM32 21H20v2h12v-2ZM18 25h-2v2h2v-2ZM32 25H20v2h12v-2ZM18 29h-2v2h2v-2ZM32 29H20v2h12v-2Z"
-                fill="#000" />
-              <path
-                d="M4 2h40v-4H4v4Zm42 2v40h4V4h-4Zm-2 42H4v4h40v-4ZM2 44V4h-4v40h4Zm2 2a2 2 0 0 1-2-2h-4a6 6 0 0 0 6 6v-4Zm42-2a2 2 0 0 1-2 2v4a6 6 0 0 0 6-6h-4ZM44 2a2 2 0 0 1 2 2h4a6 6 0 0 0-6-6v4ZM4-2a6 6 0 0 0-6 6h4a2 2 0 0 1 2-2v-4Z"
-                fill="#E5E5E5" /></svg>
+          <a class="card-grid-toggle button-disable" href="#">
+            <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z" fill="#000"/></svg>
             <span class="visually-hidden">Показать список</span>
           </a>
-
         </div>
         <ul class="hotel-list">
+
           <li class="hotel-cards">
             <a class="hotel-cards-link" href="#">
               <img class="hotels-cards-image" src="./images/catalog/hotel-1.jpg" width="300" height="211"
@@ -286,32 +274,20 @@
               <a class="pagination-link" href="#!">4</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link-disable" href="#!">...</a>
+              <span class="pagination-link-disable">...</span>
             </li>
             <li class="pagination-item">
               <a class="pagination-link-text" href="#!">10</a>
             </li>
           </ul>
           <p class="search-hotels">Гостиниц на странице:</p>
-
-
-
           <details class="dropdown-page-bottom">
-            <summary class="dropdown-sorting">4</summary>
-            <div class="dropdown-sorting-menu">
+            <summary class="button-dropdown-sorting">4</summary>
+            <div class="dropdown-menu">
               <a class="dropdown-item" href="#!">3<br></a>
               <a class="dropdown-item" href="#!">2</a>
             </div>
           </details>
-
-
-
-
-
-          <!--
-          <select class="select-control" aria-label="Сортировка">
-            <option value="Санчала дешевые">4</option>
-          </select>    -->
         </div>
         <section class="newsletter-catalog">
           <div class="newsletter-container">
@@ -360,7 +336,8 @@
             </a>
           </li>
         </ul>
-        <p class="number">+7 (812) 812-12-12</p>
+        <h2 class="visually-hidden">Контакты</h2>
+        <a class="number" href="tel:+781281212">+7 (812) 812-12-12</a>
         <a class="htmlacademy-link about-text" href="https://htmlacademy.ru/">
           <svg width="115" height="33" viewBox="0 0 115 33" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
