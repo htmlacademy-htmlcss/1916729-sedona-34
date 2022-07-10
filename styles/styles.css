@@ -28,6 +28,11 @@ body {
   background-color: #FFFFFF;
 }
 
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
 body > div {
   display: flex;
   flex-direction: column;
@@ -109,6 +114,7 @@ body > div {
   font-weight: 700;
   font-size: 20px;
   text-transform: capitalize;
+
   color: #000000;
 }
 
@@ -1220,8 +1226,7 @@ summary {
 
 .hotel-cards-button:hover,
 .hotel-cards-button:focus {
-  backgrond-color: #615048;
-
+  background-color: #615048;
 }
 
 .hotel-cards-button:active {
