@@ -261,7 +261,7 @@ body > div {
 }
 
 .button {
-  font-family: "inherit";
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -419,6 +419,7 @@ body > div {
 }
 
 .button-dropdown {
+  list-style: none;
   padding: 10px 0 14px 18px;
 }
 
@@ -457,9 +458,6 @@ body > div {
   margin-top: 0.6em;
 }
 
-summary {
-  list-style: none
-}
 
 .dropdown-page-bottom {
   position: relative;
@@ -474,6 +472,7 @@ summary {
 }
 
 .button-dropdown-sorting {
+  list-style: none;
   padding: 10px 0 14px 18px;
 }
 
