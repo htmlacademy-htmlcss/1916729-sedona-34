@@ -25,7 +25,7 @@ body {
   font-size: 22px;
   line-height: 26px;
   color: #000000;
-  background-color: #FFFFFF;
+  background-color: #E5E5E5;
 }
 
 img {
@@ -70,8 +70,7 @@ body > div {
   margin: auto 0;
 }
 
-.navigation-list li:nth-child(2) .navigation-search-link::after {
-  content: '12';
+.navigation-about-text {
   position: absolute;
   width: 20px;
   height: 20px;;
@@ -523,10 +522,6 @@ summary {
 .site-container {
   width: 1200px;
   margin: 0 auto;
-}
-
-.page-header-logo {
-  display: block;
 }
 
 .navigation-logo {
@@ -1399,11 +1394,12 @@ summary {
   margin: 0 auto;
   width: 1200px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
 }
 
 /**Фоновые изображения**/
 .inner-filter {
-  background-color: #82B3D3;
+  background-color: #68889f;
   background-image: url("../images/catalog-background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -1416,15 +1412,15 @@ summary {
   background-position: 100% calc(100% + 1px);
   background-size: 100% auto , cover ;
   color: #000000;
-  background-color: #ffffff;
+  background-color: #c8e0fb;
 }
 
 .newsletter {
-  background-color:  #82B3D3;
   background-image: url("../images/pattern.jpg");
   height: 411px;
   background-repeat: no-repeat;
   background-size: 100% auto;
+  background-color: #a8d0eb;
 }
 
 .hotels-cards-image {
