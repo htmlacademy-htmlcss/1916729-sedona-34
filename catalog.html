@@ -35,6 +35,7 @@
             <li class="navigation-search-item ">
               <a class="navigation-search-link navigation-icon-favorite" href="#">
                 <span class="visually-hidden">Нравится</span>
+                <span class="navigation-about-text">12</span>
               </a>
             </li>
             <li class="navigation-search-item">
@@ -129,9 +130,11 @@
                 <div class="range">
                   <div class="range-wrapper-inputs">
                     <label class="catalog-filter-label" for="min-price">
+                      <span class="visually-hidden">Стоимость от</span>
                       <input class="range-input" type="number" name="min-price" id="min-price" value="0">
                     </label>
                     <label class="catalog-filter-label" for="max-price">
+                      <span class="visually-hidden">Стоимость до</span>
                       <input class="range-input" type="number" name="max-price" id="max-price" value="9000">
                     </label>
                   </div>
@@ -296,8 +299,8 @@
               честное бойскаутское!
             </p>
             <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-              <label for="newsletter-email"></label>
-              <input class="field" placeholder="Ваш e-mail" type="email" id="newsletter-email" required>
+              <label for="newsletter-email" class="visually-hidden">Введите вашу почту</label>
+              <input class="field" placeholder="Ваш e-mail" type="email" id="newsletter-email" name="newsletter-email" required>
               <button class="button newsletter-button" type="submit">Подписаться
                 <span class="visually-hidden">Подписаться</span>
               </button>

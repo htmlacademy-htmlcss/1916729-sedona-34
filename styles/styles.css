@@ -25,7 +25,7 @@ body {
   font-size: 22px;
   line-height: 26px;
   color: #000000;
-  background-color: #FFFFFF;
+  background-color: #E5E5E5;
 }
 
 img {
@@ -70,8 +70,7 @@ body > div {
   margin: auto 0;
 }
 
-.navigation-list li:nth-child(2) .navigation-search-link::after {
-  content: '12';
+.navigation-about-text {
   position: absolute;
   width: 20px;
   height: 20px;;
@@ -262,7 +261,7 @@ body > div {
 }
 
 .button {
-  font-family: "inherit";
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -420,6 +419,7 @@ body > div {
 }
 
 .button-dropdown {
+  list-style: none;
   padding: 10px 0 14px 18px;
 }
 
@@ -458,9 +458,6 @@ body > div {
   margin-top: 0.6em;
 }
 
-summary {
-  list-style: none
-}
 
 .dropdown-page-bottom {
   position: relative;
@@ -475,6 +472,7 @@ summary {
 }
 
 .button-dropdown-sorting {
+  list-style: none;
   padding: 10px 0 14px 18px;
 }
 
@@ -523,10 +521,6 @@ summary {
 .site-container {
   width: 1200px;
   margin: 0 auto;
-}
-
-.page-header-logo {
-  display: block;
 }
 
 .navigation-logo {
@@ -1399,11 +1393,12 @@ summary {
   margin: 0 auto;
   width: 1200px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
 }
 
 /**Фоновые изображения**/
 .inner-filter {
-  background-color: #82B3D3;
+  background-color: #68889f;
   background-image: url("../images/catalog-background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -1416,15 +1411,15 @@ summary {
   background-position: 100% calc(100% + 1px);
   background-size: 100% auto , cover ;
   color: #000000;
-  background-color: #ffffff;
+  background-color: #c8e0fb;
 }
 
 .newsletter {
-  background-color:  #82B3D3;
   background-image: url("../images/pattern.jpg");
   height: 411px;
   background-repeat: no-repeat;
   background-size: 100% auto;
+  background-color: #a8d0eb;
 }
 
 .hotels-cards-image {
@@ -1665,17 +1660,46 @@ summary {
   text-align: center;
 }
 
-.search-form-comments {
-  margin: 0;
+.validation-date {
+  min-height: 32px;
+  width: 419px;
+  margin-top: 0;
   margin-left: 155px;
-  margin-bottom: 9px;
+  margin-bottom: 3px;
   font-size: 16px;
   color: #333333;
 }
-
-.search-form-comments-false {
+.check-error {
+  display: none;
+  padding-top: 3px;
+  margin-top: 0;
+  margin-bottom: 11px;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 21px;
+  width: 100%;
   color: #FF5757;
 }
+.check-info {
+  display: none;
+  padding-top: 3px;
+  margin-bottom: 11px;
+  margin-top: 0;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 21px;
+  width: 100%;
+}
+.check-error-show {
+  display: block;
+}
+.check-info-show {
+  display: block;
+}
+.error + .validation-date {
+  display: block;
+}
+
 
 .modal-find-button {
   display: flex;
