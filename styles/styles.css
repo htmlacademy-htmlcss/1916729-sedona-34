@@ -1661,17 +1661,46 @@ summary {
   text-align: center;
 }
 
-.search-form-comments {
-  margin: 0;
+.validation-date {
+  min-height: 32px;
+  width: 419px;
+  margin-top: 0;
   margin-left: 155px;
-  margin-bottom: 9px;
+  margin-bottom: 3px;
   font-size: 16px;
   color: #333333;
 }
-
-.search-form-comments-false {
+.check-error {
+  display: none;
+  padding-top: 3px;
+  margin-top: 0;
+  margin-bottom: 11px;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 21px;
+  width: 100%;
   color: #FF5757;
 }
+.check-info {
+  display: none;
+  padding-top: 3px;
+  margin-bottom: 11px;
+  margin-top: 0;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 21px;
+  width: 100%;
+}
+.check-error-show {
+  display: block;
+}
+.check-info-show {
+  display: block;
+}
+.error + .validation-date {
+  display: block;
+}
+
 
 .modal-find-button {
   display: flex;
