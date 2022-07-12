@@ -113,7 +113,6 @@ body > div {
   font-weight: 700;
   font-size: 20px;
   text-transform: capitalize;
-
   color: #000000;
 }
 
@@ -173,16 +172,6 @@ body > div {
   right: 3px;
 }
 
-.container-item {
-  background-color: rgba(131, 179, 211, 0.12);
-}
-
-.container-item-color {
-  width: 400px;
-  height: 384px;
-  background-color:rgba(131, 179, 211, 0.2);
-}
-
 .benefits-title {
   font-weight: 700;
   font-size: 24px;
@@ -190,11 +179,11 @@ body > div {
   text-align: center;
   text-transform: uppercase;
   margin: 0;
-  padding: 102px 0 30px 0;
+  padding: 101px 0 30px 0;
 }
 
 .benefits-title {
-  padding: 30px 0;
+  margin: 6px 0 0 0;
 }
 
 .benefits-about {
@@ -202,8 +191,8 @@ body > div {
   line-height: 21px;
   text-align: center;
   align-items: center;
-  margin: 0 0 80px;
-  padding: 0;
+  margin: 0 0 76px;
+  padding: 1px 3px;
 }
 
 .search-hotel {
@@ -229,13 +218,13 @@ body > div {
   font-size: 30px;
   line-height: 36px;
   text-align: center;
-  margin: 95px 0 28px;
+  margin: 92px 0 28px;
   text-transform: uppercase;
   color: #ffffff;
 }
 
 .page-footer-description {
-  margin: 0 0 46px 5px;
+  margin: 3px 4px 45px 5px;
   text-align: center;
   color: #ffffff;
 }
@@ -283,9 +272,10 @@ body > div {
   text-decoration: none;
   border-radius: 4px;
   width: 574px;
-  height: 60px;
+  min-height: 60px;
   color: #ffffff;
   background-color:#756157;
+  margin-bottom: 50px;
 }
 
 .inner-header-title {
@@ -458,7 +448,6 @@ body > div {
   margin-top: 0.6em;
 }
 
-
 .dropdown-page-bottom {
   position: relative;
   font-family: "PT Sans", sans-serif;
@@ -538,7 +527,7 @@ body > div {
   padding-top: 51px;
 }
 
-.advantage-container{
+.advantage-container {
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
@@ -559,7 +548,14 @@ body > div {
 
 .container-item {
   width: 400px;
-  height: 384px;
+  min-height: 384px;
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.container-item-color {
+  width: 400px;
+  min-height: 384px;
+  background-color:rgba(131, 179, 211, 0.2);
 }
 
 .advantage-list {
@@ -588,10 +584,14 @@ body > div {
 .benefits-item {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  align-items: stretch;
+  justify-content: center;
+  align-items: center;
   width: 400px;
-  height: 384px;
+  min-height: 384px;
+}
+
+.benefits-item-color{
+  background: rgba(131, 179, 211, 0.12);
 }
 
 .benefits-container{
@@ -607,7 +607,7 @@ body > div {
   display: flex;
   flex-wrap: nowrap;
   width: 1200px;
-  height: 384px;
+  min-height: 384px;
 }
 
 .wrapper-title-text {
@@ -627,7 +627,7 @@ body > div {
   justify-content: flex-start;
   flex-direction: column;
   align-items: center;
-  height: 417px;
+  min-height: 417px;
   margin: 0 ;
   padding: 0;
 }
@@ -637,7 +637,7 @@ body > div {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  height: 411px;
+  min-height: 411px;
 }
 
 .newsletter-form {
@@ -646,6 +646,7 @@ body > div {
   justify-content: center;
   box-sizing: border-box;
   width: 200px;
+  padding-bottom: 24px;
 }
 
 .newsletter-form input {
@@ -690,7 +691,7 @@ body > div {
   justify-content: center;
   align-items: center;
   padding: 0;
-  width: 47px;
+  min-width: 47px;
   height: 40px;
 }
 
@@ -706,7 +707,7 @@ body > div {
   margin: 40px 70px 30px;
 }
 
-/**Catalog flex**/
+/**Каталог**/
 .inner-header-title {
   margin: 0 0 0 70px;
   padding-top: 34px;
@@ -714,8 +715,9 @@ body > div {
 
 .inner-filter {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
-  height: 403px;
+  min-height: 403px;
 }
 
 .catalog-hotels {
@@ -737,6 +739,7 @@ body > div {
 .catalog-filter {
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -793,7 +796,7 @@ body > div {
 .hotel-cards {
   list-style: none;
   width: 340px;
-  height: 438px;
+  min-height: 438px;
   margin-right: 18px;
 }
 
@@ -891,6 +894,7 @@ body > div {
 .pagination-item:not(:last-child) {
   margin-right: 8px;
 }
+
 .pagination-item:last-child {
   padding: 11px 14px 20px 0;
 }
@@ -909,10 +913,6 @@ body > div {
   padding: 0;
   margin-top: 3px;
   list-style-type: none;
-}
-
-.catalog-filter {
-  display: flex;
 }
 
 .catalog-filter-group {
@@ -943,6 +943,7 @@ body > div {
   padding: 0;
   margin-bottom: 20px;
 }
+
 .button-reset {
   border: none;
   background-color: transparent;
@@ -1314,7 +1315,7 @@ body > div {
   color: #333333;
 }
 
-/**sticky footer**/
+/**Стики футер**/
 .main-container {
   flex-grow: 1;
 }
@@ -1401,25 +1402,26 @@ body > div {
   background-color: #68889f;
   background-image: url("../images/catalog-background.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover ;
 }
 
 .main-background {
+  background-color: #c8e0fb;
   background-image: url("../images/icon/background-border.svg"), url("../images/index-background.jpg");
-  height: 485px;
+  min-height: 485px;
   background-repeat: no-repeat, no-repeat;
   background-position: 100% calc(100% + 1px);
   background-size: 100% auto , cover ;
   color: #000000;
-  background-color: #c8e0fb;
 }
 
 .newsletter {
+  background-color: #a8d0eb;
   background-image: url("../images/pattern.jpg");
-  height: 411px;
+  min-height: 411px;
   background-repeat: no-repeat;
   background-size: 100% auto;
-  background-color: #a8d0eb;
+
 }
 
 .hotels-cards-image {
@@ -1432,27 +1434,33 @@ body > div {
 
 /**Декоративные элементы**/
 .benefits-icon-house {
+  position: relative;
   background-image: url("../images/icon/house-icon.svg");
   background-repeat: no-repeat;
-  background-position-y: 80px;
-  background-position-x: center;
-  background-color: rgba(131, 179, 211, 0.12);
-}
-
-.benefits-icon-burger {
-  background-image: url("../images/icon/burger-icon.svg");
-  background-repeat: no-repeat;
-  background-position-y: 80px;
-  background-position-x: center;
+  top: 78px;
+  width: 74px;
+  height: 72px;
   background-color: #FFFFFF;
 }
 
+.benefits-icon-burger {
+  position: relative;
+  background-image: url("../images/icon/burger-icon.svg");
+  background-repeat: no-repeat;
+  top: 78px;
+  right: 2px;
+  width: 74px;
+  height: 72px;
+}
+
 .benefits-icon-gifts {
+  position: relative;
   background-image: url("../images/icon/gift-icon.svg");
   background-repeat: no-repeat;
-  background-position-y: 80px;
-  background-position-x: center;
-  background-color: rgba(131, 179, 211, 0.12);
+  top: 78px;
+  width: 74px;
+  height: 76px;
+  background-color: #FFFFFF;
 }
 
 .rating-four-star {
@@ -1479,7 +1487,7 @@ body > div {
   margin-right: 71px;
 }
 
-/*Modal-show*/
+/*Модальное окно*/
 .modal-container {
   position: fixed;
   top: 0;
@@ -1501,7 +1509,7 @@ body > div {
 
 .modal-search {
   width: 715px;
-  height: 561px;
+  min-height: 561px;
   box-sizing: border-box;
 }
 
@@ -1669,6 +1677,7 @@ body > div {
   font-size: 16px;
   color: #333333;
 }
+
 .check-error {
   display: none;
   padding-top: 3px;
@@ -1680,6 +1689,7 @@ body > div {
   width: 100%;
   color: #FF5757;
 }
+
 .check-info {
   display: none;
   padding-top: 3px;
@@ -1690,16 +1700,18 @@ body > div {
   line-height: 21px;
   width: 100%;
 }
+
 .check-error-show {
   display: block;
 }
+
 .check-info-show {
   display: block;
 }
+
 .error + .validation-date {
   display: block;
 }
-
 
 .modal-find-button {
   display: flex;
