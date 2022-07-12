@@ -1440,7 +1440,6 @@ body > div {
   top: 78px;
   width: 74px;
   height: 72px;
-  background-color: #FFFFFF;
 }
 
 .benefits-icon-burger {
@@ -1451,6 +1450,7 @@ body > div {
   right: 2px;
   width: 74px;
   height: 72px;
+  background-color: #FFFFFF;
 }
 
 .benefits-icon-gifts {
@@ -1460,7 +1460,6 @@ body > div {
   top: 78px;
   width: 74px;
   height: 76px;
-  background-color: #FFFFFF;
 }
 
 .rating-four-star {
